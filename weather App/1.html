@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="X-UA-compatible" content="ie-edge">
+<link rel="stylesheet" href="1.css">
+<title>
+Weather App
+</title>
+</head>
+<div class="container">
+<h1>WEATHER APP</h1>
+<div class="citybtn">
+    <button class="your weatherbtn">Your Weather</button>
+    <button class="search weatherbtn">Search Weather</button>
+</div>
+<div class="permission">
+        <div class="locationicon">
+            <img src="assets/location.png" alt="location" height="88px" loading="lazy">
+        </div>
+    <span class="bighead">Grant Location Access</span>
+    <span class="smallhead">Allow Access to get weather Information</span>
+    <button class="grant">Grant Access</button>
+</div>
+<div class="result">
+    <div class="place">
+    <span data-cityName></span>
+    <span><img src=""  alt="" data-countryflag height="20px"></span>
+</div>
+    <div class="weatherdetails">
+        <span data-condition></span>
+        <span><img src="" alt="" data-weathericon height="60px" ></span>
+        <span data-temperature></span>
+    </div>
+    <div class="cards">
+        <div>
+            <span><img src="assets/wind.png" alt="windspeed" height="60px"></span>
+            <span>WindSpeed</span>
+            <span data-windspeed></span>
+        </div>
+        <div>
+            <span><img src="assets/humidity.png" alt="humidity" height="60px"></span>
+            <span>Humidity</span>
+            <span data-humidity></span>
+        </div>
+        <div>
+            <span><img src="assets/cloud.png" alt="clouds" height="60px"></span>
+            <span>Clouds</span>
+            <span data-clouds></span>
+        </div>
+    </div>
+</div>
+<div class="searchbox">
+<input type="text" placeholder="Search for city..." required data-searchInput>
+<button><img src="assets/search.png" alt="err" loading="lazy"></button>
+</div>
+<div class="loader">
+    <img src="assets/loading.gif" alt="err" loading="lazy" height="120px">
+    <p>Loading...</p>
+</div>
+<div class="error">
+    <img class="errImg" alt="err 404 not found">
+</div>
+</div>
+<body>
+<script src="1.js"></script>
+</body>
+</html>
